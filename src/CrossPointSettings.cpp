@@ -488,10 +488,12 @@ float CrossPointSettings::getReaderLineCompression() const {
   if (sdFontFamilyName[0] != '\0') {
     switch (lineSpacing) {
       case TIGHT:
-        return 0.95f;
+        // return 0.95f;
+        return 0.85f;
       case NORMAL:
       default:
-        return 1.0f;
+        // return 1.0f;
+        return 0.95f;
       case WIDE:
         return 1.1f;
     }
